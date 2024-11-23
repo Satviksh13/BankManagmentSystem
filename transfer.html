@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Transfer</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CryptoBank</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="logout" href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="transfer-section">
+            <h1>Transfer Funds</h1>
+            <form id="transfer-form">
+                <div class="form-group">
+                    <label for="from-account">From Account:</label>
+                    <input type="text" id="from-account" name="fromAccount" placeholder="Enter your account number" required>
+                </div>
+                <div class="form-group">
+                    <label for="to-account">To Account:</label>
+                    <input type="text" id="to-account" name="toAccount" placeholder="Enter recipient's account number" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter amount to transfer" required>
+                </div>
+                <div class="form-group">
+                    <label for="remarks">Remarks (Optional):</label>
+                    <textarea id="remarks" name="remarks" placeholder="Add any remarks"></textarea>
+                </div>
+                <button type="submit">Transfer Now</button>
+            </form>
+            <p id="message" class="message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CryptoBank. All rights reserved.</p>
+    </footer>
+    <script src="transfer.js"></script>
+</body>
+</html>
